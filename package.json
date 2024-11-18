@@ -1,10 +1,20 @@
 {
     "name": "wide-fsm",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Finite State Machine using tagged discriminated unions for state/events.",
+    "keywords": [
+        "fsm",
+        "finite state machine",
+        "typescript",
+        "generic"
+    ],
     "type": "module",
     "module": "./dist/index.mjs",
-    "types":"./dist/index.d.mts",
+    "types": "./dist/index.d.mts",
+    "files": [
+        "./dist/index.js",
+        "./dist/index.d.ts"
+    ],
     "exports": {
         ".": {
             "import": {
@@ -14,11 +24,16 @@
         }
     },
     "scripts": {
+        "prepare": "npm run build",
         "build": "tsup",
         "test": "jest --coverage",
         "docs": "typedoc --plugin typedoc-plugin-markdown --tsconfig ./tsconfig.lib.json --out docs ./src/index.ts"
     },
-    "author": "",
+    "author": "sanspointes",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sanspointes/wide-fsm.git"
+    },
     "license": "ISC",
     "devDependencies": {
         "@jest/globals": "^29.7.0",
