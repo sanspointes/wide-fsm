@@ -2,6 +2,9 @@
 
 [docs](./docs/README.md)
 
+![npm package minimized gzipped size](https://img.shields.io/bundlejs/size/wide-fsm)
+![NPM Version](https://img.shields.io/npm/v/wide-fsm)
+
 WideFSM is a strongly typed implementation of a finite state machine that uses discriminated unions for state and events.
 What this means is you can pass arbitrary data in objects to your FSM and have it store more than just a state tag.
 
